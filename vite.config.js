@@ -7,4 +7,11 @@ export default defineConfig({
   server: {
     port: 9527,     // 端口
   },
+  css: {
+    preprocessorOptions: {
+      sass: {
+        api: 'modern' // 或者 'modern-compiler'
+      }
+    }
+  }
 })
