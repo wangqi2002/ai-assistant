@@ -1,9 +1,15 @@
 <template>
-  <HelloWorld msg="Vite + Vue" />
+  <div id="app">
+    <Home></Home>
+  </div>
 </template>
 
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+import { ref, provide, onMounted } from "vue";
+import Home from './views/HomeView.vue'
+
+onMounted(() => {
+});
 </script>
 
 <style scoped></style>
